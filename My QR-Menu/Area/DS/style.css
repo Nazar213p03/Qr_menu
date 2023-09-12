@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Comfortaa', 'cursive';
+}
+
+
+/* Header */
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Адаптивні стилі для різних розмірів екрану */
+@media screen and (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+        /* Приклад: на повну ширину екрану на пристроях з максимальною шириною 768px */
+    }
+}
+
+/* Start menu */
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 33%;
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.menu-item-up {
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.menu-item h2 {
+    margin: 0;
+}
+
+.price {
+    font-family: 'Comfortaa', 'cursive';
+    font-weight: bold;
+    color: #555555;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}

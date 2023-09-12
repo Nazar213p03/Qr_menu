@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <title>QR-menu</title>
+
+       <style type="text/css">
+        body {
+         background-image: url(images/back2.jpg);
+         height: 100%;
+         width: 100%;
+        }
+       </style>
+       
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="top">
+            <div class="title">
+              <h1 id="sowa-txt">SOWA.Breakfast.Waffles.Coffee.</h1>
+              <h2 id="rest">Ресторан - <span>змінити заклад</span></h2>
+            </div>
+            <div class="buttons">
+              <button id="btn1">
+                <p>UK</p>
+              </button>
+              <button id="btn2">
+                <p>UK</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#menu-item20" onclick="scrollToPosition(19)">Пункт меню 20</a>
+          </li>
+          <li class="menu-item"><a href="#">Breakfast</a></li>
+          <li class="menu-item"><a href="#">For you</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu -->
+      <h1>Coffee Shop Menu</h1>
+      <div id="menu">
+        <!-- 1 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Americano', 'Espresso з гарячою водою', 'Кльова тєма', '$2.50')"
+        >
+          <h2>Americano</h2>
+          <p>Espresso with hot water</p>
+          <span class="price">$2.50</span>
+        </div>
+        <!-- 2 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Cappuccino', 'Espresso with steamed milk and foam', 'Кльова тєма', '$3.00')"
+        >
+          <h2>Cappuccino</h2>
+          <p>Espresso with steamed milk and foam</p>
+          <span class="price">$3.00</span>
+        </div>
+        <!-- 3 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Latte', 'Espresso with steamed milk', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Latte</h2>
+          <p>Espresso with steamed milk</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 4 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Mocha', 'Espresso with chocolate and steamed milk', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Mocha</h2>
+          <p>Espresso with chocolate and steamed milk</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 5 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Macchiato', 'Espresso with a dollop of steamed milk and foam', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Macchiato</h2>
+          <p>Espresso with a dollop of steamed milk and foam</p>
+          <span class="price">$3.00</span>
+        </div>
+        <!-- 6 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Flat White', 'Espresso with velvety steamed milk', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Flat White</h2>
+          <p>Espresso with velvety steamed milk</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 7 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Espresso', 'Strong black coffee', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Espresso</h2>
+          <p>Strong black coffee</p>
+          <span class="price">$2.00</span>
+        </div>
+        <!-- 8 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Frappuccino', 'Blended coffee with ice and milk', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Frappuccino</h2>
+          <p>Blended coffee with ice and milk</p>
+          <span class="price">$4.00</span>
+        </div>
+        <!-- 9 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Affogato', 'Vanilla ice cream with a shot of espresso', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Affogato</h2>
+          <p>Vanilla ice cream with a shot of espresso</p>
+          <span class="price">$4.50</span>
+        </div>
+        <!-- 10 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Filter Coffee', 'Slow-brewed coffee', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Filter Coffee</h2>
+          <p>Slow-brewed coffee</p>
+          <span class="price">$2.50</span>
+        </div>
+        <!-- 11 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Iced Coffee', 'Cold coffee served with ice', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Iced Coffee</h2>
+          <p>Cold coffee served with ice</p>
+          <span class="price">$3.00</span>
+        </div>
+        <!-- 12 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Australian Flat White', 'Espresso with steamed milk and microfoam', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Australian Flat White</h2>
+          <p>Espresso with steamed milk and microfoam</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 13 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Mochaccino', 'Espresso with chocolate, steamed milk, and foam', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Mochaccino</h2>
+          <p>Espresso with chocolate, steamed milk, and foam</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 14 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Irish Coffee', 'Hot coffee with Irish whiskey and whipped cream', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Irish Coffee</h2>
+          <p>Hot coffee with Irish whiskey and whipped cream</p>
+          <span class="price">$5.00</span>
+        </div>
+        <!-- 15 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Vienna', 'Whipped cream and chocolate sprinkles on top of black coffee', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Vienna</h2>
+          <p>Whipped cream and chocolate sprinkles on top of black coffee</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 16 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Turkish Coffee', 'Strong, unfiltered coffee served with grounds', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Turkish Coffee</h2>
+          <p>Strong, unfiltered coffee served with grounds</p>
+          <span class="price">$3.00</span>
+        </div>
+        <!-- 17 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('AeroPress', 'Full immersion brewing method for rich coffee', 'Кльова тєма', '$3.50')"
+        >
+          <h2>AeroPress</h2>
+          <p>Full immersion brewing method for rich coffee</p>
+          <span class="price">$4.00</span>
+        </div>
+        <!-- 18 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Red Eye', 'Coffee with an added shot of espresso', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Red Eye</h2>
+          <p>Coffee with an added shot of espresso</p>
+          <span class="price">$3.50</span>
+        </div>
+        <!-- 19 -->
+        <div
+          class="menu-item"
+          onclick="showItemDetails('Decaf', 'Coffee with reduced caffeine', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Decaf</h2>
+          <p>Coffee with reduced caffeine</p>
+          <span class="price">$2.50</span>
+        </div>
+        <!-- 20 -->
+        <div
+          class="menu-item20"
+          onclick="showItemDetails('Iced Mocha', 'Cold coffee with chocolate and milk, served with ice', 'Кльова тєма', '$3.50')"
+        >
+          <h2>Iced Mocha</h2>
+          <p>Cold coffee with chocolate and milk, served with ice</p>
+          <span class="price">$4.00</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

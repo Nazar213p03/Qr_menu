@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+}
+/* Застосовуємо адаптивний дизайн для екранів до 1400px */
+@media only screen and (max-width: 1440px) {
+  .menu {
+    display: none; /* Ховаємо меню на екранах до 1200px */
+  }
+}
+
+.wrapper {
+    max-width: 1440px; /* Збільшуємо максимальну ширину wrapper-а */
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px;
+    box-shadow: 0px 9px 22px -15px rgba(0, 0, 0, 0.28);
+}
+
+#rest {
+    font-family: 'Roboto', sans-serif; /* Змінюємо font-family */
+    font-weight: bold; /* Встановлюємо товщину шрифту */
+    font-size: 14px; /* Змінюємо розмір шрифту */
+    color: grey;
+}
+
+span {
+    color: #EE6FBB;
+}
+
+
+
+#btn1 {
+    /* Видаляємо width і height, щоб кнопка займала простір відповідно до тексту */
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#btn2 {
+    /* Видаляємо width і height, щоб кнопка займала простір відповідно до тексту */
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Збільшуємо відстань між елементами меню */
+}
+
+#Menu {
+    font-family: 'Roboto', sans-serif; /* Змінюємо font-family */
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#feedback {
+    font-family: 'Roboto', sans-serif; /* Змінюємо font-family */
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.header {
+    padding: 10px;
+    box-shadow: 0px 9px 22px -15px rgba(0, 0, 0, 0.28);
+}
+
+#rest {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+}
+
+span {
+    color: #EE6FBB;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+#Menu,
+#feedback {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* Адаптивний дизайн для екранів телефонів */
+@media only screen and (max-width: 767px) {
+  .top {
+    flex-direction: column; /* Змінюємо розташування елементів в top на вертикальне */
+    gap: 10px; /* Зменшуємо відстань між елементами в top */
+  }
+
+  .buttons {
+    flex-direction: column; /* Змінюємо розташування кнопок на вертикальне */
+  }
+
+  #sowa-txt {
+    font-size: 20px; /* Змінюємо розмір заголовка h1 */
+  }
+
+  #rest {
+    font-size: 12px; /* Змінюємо розмір підзаголовка h2 */
+  }
+
+  .menu {
+    flex-direction: column; /* Змінюємо розташування елементів меню на вертикальне */
+    gap: 10px; /* Зменшуємо відстань між елементами меню */
+  }
+}
+
